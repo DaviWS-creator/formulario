@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Campos do formulário vão aqui -->
+        <h3>Cadastre-se</h3>
+        <div class="form-group">
+            <label for="nome"> Nome: </label>
+            <input type="text" id="nome" name="nome" placeholder="nome completo...">
+        </div>
+
+        <div class="form-group">
+            <label for="data_nascimento">Data de Nascimento: </label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label> Habilidades:</label>
+
+            <label for="html">
+                <input type="checkbox" id="html" name="habilidades" value="HTML"> HTML
+            </label>
+
+            <label for="css">
+                <input type="checkbox" id="css" name="habilidades" value="CSS"> CSS
+            </label>
+
+            <label for="js">
+                <input type="checkbox" id="js" name="habilidades" value="JS"> JavaScript
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="pais"> País:</label>
+
+            <select name="pais" id="pais">
+
+                <!--Adicione mais opções conforme necessário -->
+
+                <option value="BR">Brasil</option>
+                <option value="IT">Italia</option>
+                <option value="CN">Canada</option>
+                <option value="EUA">Estados Unidos da America</option>
+                <option value="CH">China</option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+
+            <label for="comentarios">Comentarios:</label><br>
+
+            <textarea name="comentarios" id="comentarios"></textarea>
+
+        </div>
+            
+
+        <div class="form-group">
+            <button type="submit">ENVIAR!</button>
+        </div>
+
+    </form>
+</body>
+</html>
