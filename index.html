@@ -71,5 +71,20 @@
         </div>
 
     </form>
+
+    <script>
+        let data = document.querySelector("#data_nascimento").value 
+
+        const nascimento = new Date(data);
+        const hoje = new Date();
+
+        let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+        console.log(data);
+
+        alert("a idade é: " + idade);
+
+        return false
+    </script>
 </body>
 </html>
